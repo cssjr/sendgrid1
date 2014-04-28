@@ -2,8 +2,8 @@ Given(/^I have opened "(.*?)"$/) do |url|
   visit url
 end
 
-When(/^I click the link "(.*?)"$/) do |link|
-  click_link "<span>#{link}</span>"
+When(/^I click the link "(.*?)"$/) do |text|
+  click_link_within "rui-main-nav", text
 end
 
 Then(/^I navigate to the page "(.*?)"$/) do |arg1|

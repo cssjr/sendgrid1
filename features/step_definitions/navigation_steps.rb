@@ -2,8 +2,8 @@ Given(/^I have opened "(.*?)"$/) do |url|
   visit url
 end
 
-When(/^I click the link "(.*?)"$/) do |link|
-  click_link "link"
+When(/^I click the link "(.*?)"$/) do |text|
+  click_link text
 end
 
 Then(/^I navigate to the page "(.*?)"$/) do |arg1|

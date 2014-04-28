@@ -41,3 +41,7 @@ D, [2014-04-27T22:22:33.288737 #22612] DEBUG -- : REQUESTING PAGE: GET http://ww
 D, [2014-04-27T22:22:33.432374 #22612] DEBUG -- : REQUESTING PAGE: GET /search?q=Portland%2c+Oregon&form=hpcapt&filters=HpDate%3a%2220140427_0700%22 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}
 D, [2014-04-27T22:25:12.593705 #22637] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
 D, [2014-04-27T22:25:12.744835 #22637] DEBUG -- : REQUESTING PAGE: GET /search?q=Portland%2c+Oregon&form=hpcapt&filters=HpDate%3a%2220140427_0700%22 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}
+D, [2014-04-28T01:08:30.525518 #23791] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-28T01:10:02.620426 #23829] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-28T01:10:14.982103 #23842] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-28T01:10:38.228349 #23847] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
