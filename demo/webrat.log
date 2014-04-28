@@ -1,0 +1,2 @@
+# Logfile created on 2014-04-27 21:27:12 -0700 by logger.rb/31641
+D, [2014-04-27T21:27:12.303111 #21957] DEBUG -- : REQUESTING PAGE: GET http://www.google.com/ with {} and HTTP headers {}
