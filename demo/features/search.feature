@@ -3,7 +3,7 @@ Feature: Search Google
   I want to check it is listed on the first page in Google
 
   Scenario: Searching for JS.Class dogs
-    Given I have opened "http://www.google.com/"
+    Given I have opened "http://www.bing.com/"
     When I search for "JS.Class"
-    Then I should see a link to "http://jsclass.jcoglan.com/" with text "JS.Class - Ruby-style JavaScript"
+    Then I should see a link to "http://jsclass.jcoglan.com/" with text "James Coglan's <strong>JS.Class</strong>"
 

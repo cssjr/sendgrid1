@@ -1,2 +1,23 @@
 # Logfile created on 2014-04-27 21:27:12 -0700 by logger.rb/31641
 D, [2014-04-27T21:27:12.303111 #21957] DEBUG -- : REQUESTING PAGE: GET http://www.google.com/ with {} and HTTP headers {}
+D, [2014-04-27T21:36:34.309987 #22066] DEBUG -- : REQUESTING PAGE: GET http://www.google.com/ with {} and HTTP headers {}
+D, [2014-04-27T21:41:21.886715 #22091] DEBUG -- : REQUESTING PAGE: GET http://www.google.com/ with {} and HTTP headers {}
+D, [2014-04-27T21:41:22.006209 #22091] DEBUG -- : REQUESTING PAGE: GET /search with [{"ie"=>"ISO-8859-1"}, {"hl"=>"en"}, {"source"=>"hp"}, {"q"=>"JS.Class"}, {"btnG"=>"Google Search"}, {"gbv"=>"1"}] and HTTP headers {"HTTP_REFERER"=>"http://www.google.com/"}
+D, [2014-04-27T21:43:38.599385 #22106] DEBUG -- : REQUESTING PAGE: GET http://www.google.com/ with {} and HTTP headers {}
+D, [2014-04-27T21:43:38.815896 #22106] DEBUG -- : REQUESTING PAGE: GET /search with [{"ie"=>"ISO-8859-1"}, {"hl"=>"en"}, {"source"=>"hp"}, {"q"=>"JS.Class"}, {"btnG"=>"Google Search"}, {"gbv"=>"1"}] and HTTP headers {"HTTP_REFERER"=>"http://www.google.com/"}
+D, [2014-04-27T21:46:27.499121 #22147] DEBUG -- : REQUESTING PAGE: GET http://www.google.com/ with {} and HTTP headers {}
+D, [2014-04-27T21:46:27.606128 #22147] DEBUG -- : REQUESTING PAGE: GET /search with [{"ie"=>"ISO-8859-1"}, {"hl"=>"en"}, {"source"=>"hp"}, {"q"=>"JS.Class"}, {"btnG"=>"Google Search"}, {"gbv"=>"1"}] and HTTP headers {"HTTP_REFERER"=>"http://www.google.com/"}
+D, [2014-04-27T21:52:15.413545 #22179] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-27T21:53:38.554242 #22199] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-27T21:56:01.694015 #22214] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-27T21:56:57.825321 #22228] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-27T21:57:28.003288 #22254] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-27T22:01:02.916071 #22268] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-27T22:04:36.587081 #22283] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-27T22:04:36.735970 #22283] DEBUG -- : REQUESTING PAGE: GET /search?q=Portland%2c+Oregon&form=hpcapt&filters=HpDate%3a%2220140427_0700%22 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}
+D, [2014-04-27T22:06:38.105393 #22319] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-27T22:06:38.246900 #22319] DEBUG -- : REQUESTING PAGE: GET /search?q=Portland%2c+Oregon&form=hpcapt&filters=HpDate%3a%2220140427_0700%22 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}
+D, [2014-04-27T22:07:05.871489 #22344] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-27T22:07:06.011730 #22344] DEBUG -- : REQUESTING PAGE: GET /search?q=Portland%2c+Oregon&form=hpcapt&filters=HpDate%3a%2220140427_0700%22 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}
+D, [2014-04-27T22:07:46.941018 #22357] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-27T22:07:47.087269 #22357] DEBUG -- : REQUESTING PAGE: GET /search?q=Portland%2c+Oregon&form=hpcapt&filters=HpDate%3a%2220140427_0700%22 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}
