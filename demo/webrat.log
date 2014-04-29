@@ -50,3 +50,7 @@ D, [2014-04-28T01:15:30.751091 #24017] DEBUG -- : REQUESTING PAGE: GET http://ww
 D, [2014-04-28T01:15:30.957017 #24017] DEBUG -- : REQUESTING PAGE: GET /profile/history?FORM=Z9LH4 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}
 D, [2014-04-28T22:12:52.228363 #2854] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
 D, [2014-04-28T22:12:52.396629 #2854] DEBUG -- : REQUESTING PAGE: GET /profile/history?FORM=Z9LH4 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}
+D, [2014-04-28T23:25:09.996569 #4448] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-28T23:25:10.150805 #4448] DEBUG -- : REQUESTING PAGE: GET /profile/history?FORM=Z9LH4 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}
+D, [2014-04-28T23:26:03.882975 #4454] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-28T23:26:04.034820 #4454] DEBUG -- : REQUESTING PAGE: GET /profile/history?FORM=Z9LH4 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}

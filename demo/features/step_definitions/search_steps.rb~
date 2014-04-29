@@ -4,7 +4,7 @@ end
 
 When(/^I search for "(.*?)"$/) do |query|
   fill_in "q", :with => query
-  click_link "go"
+  click_link "Search"
 end
 
 Then(/^I should see a link to "(.*?)" with text "(.*?)"$/) do |url,text|

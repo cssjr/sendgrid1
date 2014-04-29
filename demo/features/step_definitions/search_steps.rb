@@ -1,5 +1,6 @@
 Given(/^I have opened "(.*?)"$/) do |url|
-  visit url
+  response = visit url
+  puts response['content-type'] # for debugging
 end
 
 When(/^I search for "(.*?)"$/) do |query|

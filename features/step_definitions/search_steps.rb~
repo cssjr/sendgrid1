@@ -1,5 +1,4 @@
 When(/^my search location is in the state "(.*?)" and the suburb "(.*?)"$/) do |state, suburb|
-  string = ""
   string << suburb << ", " << state
   fill_in "where", :with => string
 end
