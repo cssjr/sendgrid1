@@ -1,10 +1,10 @@
 require 'rspec'
 require "watir-webdriver"
 
-SITE = "www.google.com"
+SITE = "www.sendgrid.com"
 BROWSER = Watir::Browser.start(SITE, :firefox)
 PAGES = {
-  "realestate.com.au" => "http://www.realestate.com.au/"
+  "realestate" => "http://www.realestate.com.au/"
 }
 
 
