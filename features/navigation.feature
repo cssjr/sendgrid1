@@ -1,11 +1,6 @@
 Feature: Navigation
   Clicking on any of the main links should bring the user to the related page
 
-  Scenario: Demo test to try to get Webrat to work
-    Given I have opened "http://www.realestate.com.au/"
-    When I click the link "Share accommodation"
-    Then I navigate to the page "http://www.realestate.com.au/sign-in"
-
   Scenario: Navigating to the "Buy" page
     Given I have opened "http://www.realestate.com.au/"
     When I click the link "Buy"
@@ -34,7 +29,7 @@ Feature: Navigation
   Scenario: Navigating to the "New homes" page
     Given I have opened "http://www.realestate.com.au/"
     When I click the link "New homes"
-    Then I navigate to the page "http://www.realestate.com.au/new-homes"
+    Then I navigate to the page "http://www.realestate.com.au/new-homes/new-apartments"
 
   Scenario: Navigating to the "Retire" page
     Given I have opened "http://www.realestate.com.au/"
@@ -49,15 +44,15 @@ Feature: Navigation
   Scenario: Navigating to the "Home ideas" page
     Given I have opened "http://www.realestate.com.au/"
     When I click the link "Home ideas"
-    Then I navigate to the page "http://www.realestate.com.au/home-ideas"
+    Then I navigate to the page "http://www.realestate.com.au/home-ideas/"
 
   Scenario: Navigating to the "Blog" page
     Given I have opened "http://www.realestate.com.au/"
     When I click the link "Blog"
-    Then I navigate to the page "http://www.realestate.com.au/blog"
+    Then I navigate to the page "http://www.realestate.com.au/blog/"
 
   Scenario: Navigating to the "Commercial" page
     Given I have opened "http://www.realestate.com.au/"
     When I click the link "Commercial"
-    Then I navigate to the page "http://www.realcommercial.com.au/for-sale"
+    Then I open the page "http://www.realcommercial.com.au/for-sale" in a new window
 
