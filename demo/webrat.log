@@ -45,3 +45,8 @@ D, [2014-04-28T01:08:30.525518 #23791] DEBUG -- : REQUESTING PAGE: GET http://ww
 D, [2014-04-28T01:10:02.620426 #23829] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
 D, [2014-04-28T01:10:14.982103 #23842] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
 D, [2014-04-28T01:10:38.228349 #23847] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-28T01:14:14.280393 #23994] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-28T01:15:30.751091 #24017] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-28T01:15:30.957017 #24017] DEBUG -- : REQUESTING PAGE: GET /profile/history?FORM=Z9LH4 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}
+D, [2014-04-28T22:12:52.228363 #2854] DEBUG -- : REQUESTING PAGE: GET http://www.bing.com/ with {} and HTTP headers {}
+D, [2014-04-28T22:12:52.396629 #2854] DEBUG -- : REQUESTING PAGE: GET /profile/history?FORM=Z9LH4 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.bing.com/"}

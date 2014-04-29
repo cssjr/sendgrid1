@@ -8,7 +8,7 @@ Feature: Navigation
 
   Scenario: Navigating to the "Buy" page
     Given I have opened "http://www.realestate.com.au/"
-    When I click the link "/buy"
+    When I click the link "Buy"
     Then I navigate to the page "http://www.realestate.com.au/buy"
 
   Scenario: Navigating to the "Rent" page
