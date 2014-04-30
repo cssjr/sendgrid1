@@ -7,10 +7,14 @@ When(/^I click the link "(.*?)"$/) do |link|
 end
 
 Then(/^I navigate to the page "(.*?)"$/) do |page|
-  BROWSER.url.eql?(page).should == true
+  BROWSER.url.should eql(page)
 end
 
 Then(/^I open the page "(.*?)" in a new window$/) do |page|
-  BROWSER.windows.last.url.eql?(page).should == true
+  BROWSER.windows.last.url.should eql(page)
+end
+
+Then(/^I navigate to the page that starts with "(.*?)"$/) do |page|
+  BROWSER.windows.last.url.should start_with(page)
 end
 

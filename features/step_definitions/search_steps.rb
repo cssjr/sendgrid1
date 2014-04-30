@@ -12,9 +12,6 @@ end
 When(/^my max price is "(.*?)"$/) do |max_price|
   BROWSER.text_field(:id => 'maxPrice').click
   BROWSER.div(:id => 'LMIDD_maxPrice').dl(:class => 'LMIDDList').dd(:text => max_price).click
-  #BROWSER.dd(:class => 'LMIDDNoSection', :text => max_price).select
-  #BROWSER.text_field(:text => maxPrice).set max_price  
-  #BROWSER.dd(:text => max_price).click
 end
 
 When(/^I click the button "(.*?)"$/) do |button|

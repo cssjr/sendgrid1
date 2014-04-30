@@ -27,6 +27,5 @@ Then(/^I should have "(.*?)" results$/) do |results|
   resultString = ""
   resultString << results << ' Total Results'
   BROWSER.div(:id => 'resultsInfo').text.should include(resultString)
-  end
 end
 

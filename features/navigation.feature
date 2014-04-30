@@ -27,11 +27,11 @@ Feature: Navigation
     Then I navigate to the page "http://www.realestate.com.au/share"
 
   Scenario: Navigating to the "New homes" page 
+  # Because the link for this scenario will choose one of several subpages, 
+  # I am only validating that this redirects to the new-homes folder
     Given I have opened "http://www.realestate.com.au/"
     When I click the link "New homes"
     Then I navigate to the page that starts with "http://www.realestate.com.au/new-homes/"
-    # Because the link for this scenario will choose one of several subpages, 
-    # I am only validating that this redirects to the new-homes folder
 
   Scenario: Navigating to the "Retire" page
     Given I have opened "http://www.realestate.com.au/"
