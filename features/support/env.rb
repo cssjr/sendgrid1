@@ -7,4 +7,5 @@ PAGES = {
   "realestate" => "http://www.realestate.com.au/"
 }
 
+World(RSpec::Matchers)
 
