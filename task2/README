@@ -1,0 +1,6 @@
+2) Using Lettuce w/Python Framework complete the following tasks.
+
+Starting at http://sendgrid.com/docs/api_workshop.html (you will have to sign up for an account and you will also have to wait for approval from our support team but as you wait you can start on the above test. Just let the support rep know that I have asked you to do this.)
+
+Scenario 1: Build a test that fills out the api method for mail. Verify you can fill out all the supported fields and that the email will send properly.
+
