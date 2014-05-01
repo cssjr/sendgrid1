@@ -2,7 +2,7 @@ Feature: Send Mail via Web API
     Use the SendGrid Web API to send out a test email
 
     Scenario: Send Test Message
-      Given I visit 'https://sendgrid.com/docs/API_Reference/Web_API/mail.html' 
+      Given I am at the page 'https://sendgrid.com/docs/API_Reference/Web_API/mail.html' 
           And I click the button 'Try It'
           And I enter the username 'css.jr'
           And I enter my password 'TmV2ZXIuNEdldA=='
