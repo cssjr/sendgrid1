@@ -1,62 +1,43 @@
 from lettuce import *
-from selenium import webdriver
-import lettuce_webdriver.webdriver
-from lettuce_webdriver.util import *
-from lettuce_webdriver.webdriver import *
+#from lettuce.django import django_url
+from splinter.browser import Browser
 
 @before.all
 def setup_browser():
-    world.browser = webdriver.Firefox()
+    world.browser = Browser()
+
+@after.all
+def close_browser(arg):
+    world.browser.quit()
 
 @step(u'Given I visit \'([^\']*)\'')
 def given_i_visit_group1(step, url):
-    world.browser.get(url)
+    world.browser.visit(url)
 
 @step(u'And I click the button \'([^\']*)\'')
 def and_i_click_the_button_group1(step, button):
-    wait_for_elem(world.browser, "//button[@id=" + button+ "]", timeout=15)
-    #find_button(world.browser, 'Try It').click
-    myList = world.browser.find_elements_by_xpath("//button[@id=" + button+ "]")
-    print myList
+    world.browser.find_by_id(button).first.click()
     
+@step(u'And my \'([^\']*)\' is \'([^\']*)\'')
+def and_my_group1_is_group2(step, field, value):
+    world.browser.fill(field, value)
 
-@step(u'And I enter the username \'([^\']*)\'')
-def and_i_enter_the_username_group1(step, group1):
-    assert False, 'This step must be implemented'
+@step(u'And select \'([^\']*)\' as \'([^\']*)\'')
+def and_select_group1_as_group2(step, name, text):
+    world.browser.find_option_by_text(text).select
 
-@step(u'And I enter my password \'([^\']*)\'')
-def and_i_enter_my_password_group1(step, group1):
-    assert False, 'This step must be implemented'
+@step(u'When my \'([^\']*)\' is \'([^\']*)\'')
+def when_my_group1_is_group2(step, group1, group2):
+    and_my_group1_is_group2(step, group1, group2)
 
-@step(u'And the response format is \'([^\']*)\'')
-def and_the_response_format_is_group1(step, group1):
-    assert False, 'This step must be implemented'
+@step(u'And I click the button of type \'([^\']*)\'')
+def and_i_click_the_button_of_type_group1(step, type):
+    xpath = '//button[@type="' + type + '"]'
+    button = world.browser.find_by_xpath(xpath).first
+    button.click()
 
-@step(u'When my To Address is \'([^\']*)\'')
-def when_my_to_address_is_group1(step, group1):
-    assert False, 'This step must be implemented'
-
-@step(u'And my To Name is \'([^\']*)\'')
-def and_my_to_name_is_group1(step, group1):
-    assert False, 'This step must be implemented'
-
-@step(u'And my Subject is \'([^\']*)\'')
-def and_my_subject_is_group1(step, group1):
-    assert False, 'This step must be implemented'
-
-@step(u'And my Text is \'([^\']*)\'')
-def and_my_text_is_group1(step, group1):
-    assert False, 'This step must be implemented'
-
-@step(u'And my From Address is \'([^\']*)\'')
-def and_my_from_address_is_group1(step, group1):
-    assert False, 'This step must be implemented'
-
-@step(u'And my From Name is \'([^\']*)\'')
-def and_my_from_name_is_group1(step, group1):
-    assert False, 'This step must be implemented'
-
-@step(u'Then the response body contains \'([^\']*)\'')
-def then_the_response_body_contains_group1_group2(step, group1, group2, group3):
-    assert False, 'This step must be implemented'
+@step(u'Then the \'([^\']*)\' contains \'([^\']*)\'')
+def then_the_group1_contains_group2(step, field, text):
+    xpath = '//tr[@class="' + field + ']/td/pre[@text="' + text + ']'
+    world.browser.is_element_present_by_xpath(xpath)
 
