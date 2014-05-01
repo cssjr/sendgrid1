@@ -38,6 +38,6 @@ def and_i_click_the_button_of_type_group1(step, type):
 
 @step(u'Then the \'([^\']*)\' contains \'([^\']*)\'')
 def then_the_group1_contains_group2(step, field, text):
-    xpath = '//tr[@class="' + field + ']/td/pre[@text="' + text ']'
+    xpath = '//tr[@class="' + field + ']/td/pre[@text="' + text + ']'
     world.browser.is_element_present_by_xpath(xpath)
 

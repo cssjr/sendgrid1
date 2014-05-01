@@ -1,57 +1,31 @@
 Feature: Navigation
   Clicking on any of the main links should bring the user to the related page
 
-  Scenario: Navigating to the "Buy" page
+  Scenario Outline: Navigating to the main pages
     Given I have opened "http://www.realestate.com.au/"
-    When I click the link "Buy"
-    Then I navigate to the page "http://www.realestate.com.au/buy"
+    When I click the link <link>
+    Then I navigate to the page <url>
 
-  Scenario: Navigating to the "Rent" page
-    Given I have opened "http://www.realestate.com.au/"
-    When I click the link "Rent"
-    Then I navigate to the page "http://www.realestate.com.au/rent"
+  Examples:
+    | link          | url                                        |
+    | "Buy"         | "http://www.realestate.com.au/buy"         |
+    | "Rent"        | "http://www.realestate.com.au/rent"        |
+    | "Invest"      | "http://www.realestate.com.au/invest"      |
+    | "Sold"        | "http://www.realestate.com.au/sold"        |
+    | "Share"       | "http://www.realestate.com.au/share"       |
+    | "Retire"      | "http://www.realestate.com.au/retire"      |
+    | "Find agents" | "http://www.realestate.com.au/find-agent"  |
+    | "Home ideas"  | "http://www.realestate.com.au/home-ideas/" |
+    | "Blog"        | "http://www.realestate.com.au/blog/"       |
 
-  Scenario: Navigating to the "Invest" page
-    Given I have opened "http://www.realestate.com.au/"
-    When I click the link "Invest"
-    Then I navigate to the page "http://www.realestate.com.au/invest"
-
-  Scenario: Navigating to the "Sold" page
-    Given I have opened "http://www.realestate.com.au/"
-    When I click the link "Sold"
-    Then I navigate to the page "http://www.realestate.com.au/sold"
-
-  Scenario: Navigating to the "Share" page
-    Given I have opened "http://www.realestate.com.au/"
-    When I click the link "Share"
-    Then I navigate to the page "http://www.realestate.com.au/share"
+# The scenario below is different because it opens to one of several sub-pages
 
   Scenario: Navigating to the "New homes" page 
-  # Because the link for this scenario will choose one of several subpages, 
-  # I am only validating that this redirects to the new-homes folder
     Given I have opened "http://www.realestate.com.au/"
     When I click the link "New homes"
     Then I navigate to the page that starts with "http://www.realestate.com.au/new-homes/"
 
-  Scenario: Navigating to the "Retire" page
-    Given I have opened "http://www.realestate.com.au/"
-    When I click the link "Retire"
-    Then I navigate to the page "http://www.realestate.com.au/retire"
-
-  Scenario: Navigating to the "Find Agents" page
-    Given I have opened "http://www.realestate.com.au/"
-    When I click the link "Find agents"
-    Then I navigate to the page "http://www.realestate.com.au/find-agent"
-
-  Scenario: Navigating to the "Home ideas" page
-    Given I have opened "http://www.realestate.com.au/"
-    When I click the link "Home ideas"
-    Then I navigate to the page "http://www.realestate.com.au/home-ideas/"
-
-  Scenario: Navigating to the "Blog" page
-    Given I have opened "http://www.realestate.com.au/"
-    When I click the link "Blog"
-    Then I navigate to the page "http://www.realestate.com.au/blog/"
+# The scenario below is different because the link opens in a new page
 
   Scenario: Navigating to the "Commercial" page
     Given I have opened "http://www.realestate.com.au/"
