@@ -5,7 +5,7 @@ Feature: Send Mail via Web API
       Given I visit 'https://sendgrid.com/docs/API_Reference/Web_API/mail.html' 
           And I click the button 'tryit-mail'
           And my 'username' is 'css.jr'
-          And my 'password' is 'Never.4Get'
+          And my 'password' is 'SendGridDemoAccount25'
           And select 'response-format' as 'JSON'
           And I click the button 'save-credentials'
       When my 'to' is 'css.jr@hotmail.com'

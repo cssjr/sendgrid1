@@ -15,4 +15,4 @@ Feature: Send Mail via Web API
           And my 'from' is 'css.jr@hotmail.com'
           And my 'fromname' is 'Cliff Schomburg'
           And I click the button of type 'input'
-      Then the 'response body' contains '"message": "success"'
+      Then the 'response-status' contains '200 - OK'

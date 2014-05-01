@@ -8,4 +8,4 @@ Feature: Search
       And my property type is "Apartment"
       And my max price is "500,000"
       And I click the button "Search"
-    Then I should have "1097" results
+    Then I should have "1107" results
